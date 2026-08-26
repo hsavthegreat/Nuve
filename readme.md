@@ -8,7 +8,7 @@ This project aims to predict future fashion trends by analyzing Instagram posts.
 
 Our project involves several stages:
 
-1. **Data Collection:** Data is gathered from Instagram posts using the Apify platform. The data includes the post's image, the number of likes and comments, and a sample of 20 comments per post.
+1. **Data Collection:** Instagram post data (images, likes, comments) is collected and stored in `data/posts_1.json`, `data/posts_2.json`, and `data/posts.csv`.
 
 2. **Image Segmentation:** The images from the posts are processed using YOLO and SAM to isolate the clothes from the background. The result is a collection of segmented images where only the clothes are visible against a black background.
 
@@ -167,4 +167,3 @@ This project is licensed under the MIT License.
 
 - Meta AI for Segment Anything Model (SAM)
 - Ultralytics for YOLO implementation
-- Apify for Instagram data collection platform
