@@ -25,7 +25,7 @@ Our project involves several stages:
 ```
 Nuve/
 ├── src/
-│   ├── pipeline.py          # Main processing pipeline (extracted from code.ipynb)
+│   ├── pipeline.py          # Main processing pipeline
 │   └── sentiment/
 │       └── model.py         # Sentiment analysis model
 ├── app/
@@ -37,7 +37,6 @@ Nuve/
 ├── images/                    # Original and segmented images (not tracked)
 ├── models/                    # Trained model weights (not tracked)
 ├── requirements.txt           # Python dependencies
-├── requirements-dev.txt       # Development dependencies
 ├── Makefile                   # Common commands
 └── .gitignore                 # Git ignore rules
 ```
@@ -61,9 +60,6 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Install development dependencies (optional)
-pip install -r requirements-dev.txt
 
 # Download NLTK data
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords'); nltk.download('wordnet')"
@@ -113,7 +109,6 @@ jupyter notebook notebooks/
 ```bash
 make format      # Format with black and isort
 make lint        # Lint with ruff
-make type-check  # Type check with mypy
 ```
 
 ### Testing
@@ -162,20 +157,11 @@ Interactive dashboard showing:
 - Sentiment distribution per cluster
 - Sample images from each cluster
 - Color palette analysis
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Run tests and linting (`make test lint`)
-5. Commit your changes (`git commit -m 'Add amazing feature'`)
-6. Push to the branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
+- Outfit analyzer feature
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
